@@ -63,200 +63,123 @@
       </div>
     </section>
 
-    <section class="work" id="work">
-      <header class="section-title">
-        <span>01</span>
-        <h2>Things I&rsquo;ve built</h2>
-        <p>Selected projects, experiments, and one paper.</p>
+    <section class="portfolio-zone" id="work">
+      <header class="zone-head">
+        <p>01 / Selected work</p>
+        <h2>Projects with<br><em>proof behind them.</em></h2>
+        <span>Systems, experiments, and one published paper.</span>
       </header>
 
-      <article class="case case--compiler">
-        <div class="case__number">01</div>
-        <div class="case__copy">
-          <p class="label">Published research · AI infrastructure</p>
-          <h3>PlanCompiler</h3>
-          <p class="case__lead">
-            A typed compiler that turns an LLM&rsquo;s plan into a valid,
-            executable data workflow.
-          </p>
-          <p class="case__body">
-            Rather than letting a model improvise code, PlanCompiler asks it
-            to assemble typed building blocks. A validator catches structural
-            mistakes before the compiler emits Python. The result is more
-            predictable, inspectable, and reliable.
-          </p>
-          <div class="links">
-            <a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Read the paper ↗</a>
-            <a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-
-        <figure class="benchmark">
-          <figcaption>
-            <span>Benchmark / tasks passed</span>
-            <small>out of 300</small>
-          </figcaption>
-          <div class="benchmark__plot">
-            <div class="bar bar--one">
-              <span class="bar__value">278</span>
-              <i></i>
-              <b>PlanCompiler</b>
-            </div>
-            <div class="bar bar--two">
-              <span class="bar__value">202</span>
-              <i></i>
-              <b>GPT-4.1</b>
-            </div>
-            <div class="bar bar--three">
-              <span class="bar__value">187</span>
-              <i></i>
-              <b>Claude<br>Sonnet 4.6</b>
+      <div class="work-mosaic">
+        <article class="work-feature">
+          <div class="work-feature__copy">
+            <p class="tile-meta">01 · AI infrastructure · Published research</p>
+            <h3>Plan<br>Compiler</h3>
+            <p class="tile-lead">A typed compiler that turns an LLM&rsquo;s plan into a valid, executable data workflow.</p>
+            <p class="tile-body">The model assembles typed building blocks; a validator catches structural mistakes before the compiler emits Python.</p>
+            <div class="tile-links">
+              <a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">Source ↗</a>
             </div>
           </div>
-          <p>Recorded 300-task benchmark</p>
-        </figure>
-      </article>
+          <div class="compiler-visual" aria-label="PlanCompiler benchmark results">
+            <div class="compiler-flow" aria-hidden="true">
+              <span>PLAN</span><i></i><span>VALIDATE</span><i></i><span>COMPILE</span>
+            </div>
+            <div class="score-board">
+              <small>Tasks passed / 300</small>
+              <div><b>278</b><span>PlanCompiler</span></div>
+              <div><b>202</b><span>GPT-4.1</span></div>
+              <div><b>187</b><span>Claude Sonnet 4.6</span></div>
+            </div>
+          </div>
+        </article>
 
-      <div class="project-list">
-        <article class="project">
-          <div class="project__index">02</div>
-          <div class="project__title">
-            <p class="label">Agent systems</p>
+        <article class="work-tile work-tile--memory">
+          <div class="tile-copy">
+            <p class="tile-meta">02 · Agent systems</p>
             <h3>Governed<br>Memory Layer</h3>
-          </div>
-          <div class="project__desc">
-            <p>
-              Shared memory for groups of agents, with a deliberate boundary
-              between private notes and promoted shared state.
-            </p>
-            <ul>
-              <li>Append-only event history</li>
-              <li>Reference resolution</li>
-              <li>Validation, replay, and fault tests</li>
-            </ul>
+            <p>Shared memory for groups of agents, with a deliberate boundary between private notes and promoted shared state.</p>
             <a href="https://github.com/prnvh/governed_memory_layer" target="_blank" rel="noopener">View project ↗</a>
           </div>
-          <div class="project__mark project__mark--memory" aria-hidden="true">
-            <span>A</span><span>B</span><span>C</span>
+          <div class="memory-visual" aria-hidden="true">
+            <div class="memory-card memory-card--a"><b>PRIVATE</b><span>working state</span></div>
+            <div class="memory-card memory-card--b"><b>VALIDATE</b><span>resolve + check</span></div>
+            <div class="memory-card memory-card--c"><b>SHARED</b><span>promoted state</span></div>
           </div>
         </article>
 
-        <article class="project project--dark">
-          <div class="project__index">03</div>
-          <div class="project__title">
-            <p class="label">Web security</p>
+        <article class="work-tile work-tile--raven">
+          <div class="raven-visual" aria-hidden="true"><span>R</span><i></i></div>
+          <div class="tile-copy">
+            <p class="tile-meta">03 · Web security</p>
             <h3>RAVEN</h3>
-          </div>
-          <div class="project__desc">
-            <p>
-              An autonomous penetration-testing agent built around browser
-              reconnaissance, JavaScript scanning, endpoint extraction, and
-              vulnerability-pattern retrieval.
-            </p>
-            <ul>
-              <li>Scoped operator tools</li>
-              <li>Retrieval-guided probes</li>
-              <li>Structured reports</li>
-            </ul>
-            <span class="muted-link">Local research project</span>
-          </div>
-          <div class="project__mark project__mark--raven" aria-hidden="true">
-            <span>R</span>
-            <i></i>
+            <p>Autonomous security testing through browser reconnaissance, endpoint extraction, and retrieval-guided probes.</p>
+            <span class="tile-muted">Local research project</span>
           </div>
         </article>
 
-        <article class="project project--lavender">
-          <div class="project__index">04</div>
-          <div class="project__title">
-            <p class="label">Artificial memory</p>
-            <h3>Lucid<br>Model</h3>
-          </div>
-          <div class="project__desc">
-            <p>
-              An earlier experiment with EBM and Hopfield-style memory,
-              designed to make recall inspectable rather than burying it in
-              an opaque chat history.
-            </p>
-            <ul>
-              <li>Basins and binding</li>
-              <li>Context operators</li>
-              <li>Projection and decoding</li>
-            </ul>
+        <article class="work-tile work-tile--lucid">
+          <div class="tile-copy">
+            <p class="tile-meta">04 · Artificial memory</p>
+            <h3>Lucid Model</h3>
+            <p>An inspectable EBM and Hopfield-style memory architecture built around basins, binding, context, projection, and decoding.</p>
             <a href="https://github.com/svmp-systems/lucid-model" target="_blank" rel="noopener">View project ↗</a>
           </div>
-          <div class="project__mark project__mark--lucid" aria-hidden="true">
-            <i></i><i></i><i></i><i></i>
+          <div class="lucid-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><i>RECALL</i>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="research" id="research">
-      <header class="section-title section-title--research">
-        <span>02</span>
-        <h2>On my desk</h2>
-        <p>Questions I&rsquo;m actively reading, testing, or planning around.</p>
+    <section class="research-zone" id="research">
+      <header class="zone-head zone-head--research">
+        <p>02 / Research notebook</p>
+        <h2>Questions currently<br><em>on my desk.</em></h2>
+        <span>Active directions and hypotheses, not finished claims.</span>
       </header>
 
-      <div class="question-list">
-        <article class="question">
-          <div class="question__meta">
-            <span>R.01</span>
-            <b>In development</b>
+      <div class="research-mosaic">
+        <article class="research-tile research-tile--reflex">
+          <div class="research-art research-art--reflex" aria-hidden="true">
+            <div class="signal"></div><div class="chip">FPGA</div><div class="arrow">→</div><div class="grip">GRIP</div>
           </div>
-          <h3>Can a robotic hand <em>reflex</em> entirely in hardware?</h3>
-          <p>
-            An FPGA-native tactile pipeline for detecting contact and slip,
-            then correcting grip without waiting for a CPU.
-          </p>
-          <div class="question__details">
-            <span>Latency</span><span>Jitter</span><span>Energy</span><span>Grip stability</span>
+          <div class="research-copy">
+            <p class="tile-meta">R.01 · Neuromorphic robotics · In development</p>
+            <h3>Can a robotic hand reflex entirely in hardware?</h3>
+            <p>An FPGA-native tactile pipeline for detecting contact and slip, then correcting grip without waiting for a CPU.</p>
+            <div class="tile-tags"><span>Latency</span><span>Energy</span><span>Grip stability</span></div>
           </div>
         </article>
 
-        <article class="question">
-          <div class="question__meta">
-            <span>R.02</span>
-            <b>Exploring</b>
-          </div>
-          <h3>What can long-context models find in continuous <em>MEG?</em></h3>
-          <p>
-            Testing whether continual-learning architectures can discover
-            reproducible brain states that transfer across people and sessions.
-          </p>
-          <div class="question__details">
-            <span>CamCAN</span><span>HCP MEG</span><span>Mamba / S4 / LSTM</span>
+        <article class="research-tile research-tile--meg">
+          <div class="meg-orbit" aria-hidden="true"><i></i><i></i><i></i><b>MEG</b></div>
+          <div class="research-copy">
+            <p class="tile-meta">R.02 · Computational neuroscience</p>
+            <h3>Long-context models for continuous MEG.</h3>
+            <p>Can continual-learning architectures find brain states that transfer across people and sessions?</p>
+            <div class="tile-tags"><span>CamCAN</span><span>HCP MEG</span><span>Mamba / S4</span></div>
           </div>
         </article>
 
-        <article class="question">
-          <div class="question__meta">
-            <span>R.03</span>
-            <b>Hypothesis</b>
+        <article class="research-tile research-tile--ritual">
+          <div class="research-copy">
+            <p class="tile-meta">R.03 · Behavioural science · Hypothesis</p>
+            <h3>Can a repeated ritual become a retrieval cue?</h3>
+            <p>How training-paired rituals may acquire the ability to reinstate task-relevant neural context.</p>
+            <div class="tile-tags"><span>Motor learning</span><span>Neural reinstatement</span></div>
           </div>
-          <h3>Can a repeated ritual become a <em>retrieval cue?</em></h3>
-          <p>
-            A theoretical account of how pre-performance rituals paired with
-            training may acquire the ability to reinstate task-relevant context.
-          </p>
-          <div class="question__details">
-            <span>Motor learning</span><span>Neural reinstatement</span>
-          </div>
+          <div class="ritual-steps" aria-hidden="true"><b>01</b><i></i><b>02</b><i></i><b>03</b></div>
         </article>
 
-        <article class="question">
-          <div class="question__meta">
-            <span>R.04</span>
-            <b>Scoping</b>
-          </div>
-          <h3>Do old lunar-propellant studies survive <em>modern launch economics?</em></h3>
-          <p>
-            Rebuilding prior models under common assumptions, then updating
-            them for reusable launch and present-day architectures.
-          </p>
-          <div class="question__details">
-            <span>Reproduce</span><span>Normalise</span><span>Update</span>
+        <article class="research-tile research-tile--lunar">
+          <div class="lunar-art" aria-hidden="true"><span></span><i></i></div>
+          <div class="research-copy">
+            <p class="tile-meta">R.04 · Space systems · Scoping</p>
+            <h3>Reassessing lunar propellant economics.</h3>
+            <p>Rebuilding prior studies under common assumptions, then updating them for reusable launch.</p>
+            <div class="tile-tags"><span>Reproduce</span><span>Normalise</span><span>Update</span></div>
           </div>
         </article>
       </div>
