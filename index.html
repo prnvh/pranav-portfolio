@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pranav Harikumar — Portfolio</title>
+  <meta name="description" content="Pranav Harikumar is a computer science student working across AI systems, neuroscience and robotics.">
+  <meta name="theme-color" content="#f2f0e9">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <a class="logo" href="#top">Pranav H.</a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="say-hi" href="mailto:prnvvh@gmail.com">Say hi ↗</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__intro">
+        <p class="overline">Computer science student · VIT Vellore</p>
+        <h1>
+          I build things for
+          <span class="hero__line"><em>brains,</em> machines,</span>
+          <span class="hero__line">and the space <i>between.</i></span>
+        </h1>
+      </div>
+
+      <div class="hero__bottom">
+        <p class="hero__bio">
+          I&rsquo;m Pranav, an 18-year-old student exploring how intelligence
+          works&mdash;in software, in nervous systems, and in machines that
+          sense and act in the world.
+        </p>
+
+        <div class="hero__stamp" aria-hidden="true">
+          <span>Currently</span>
+          <strong>Vellore</strong>
+          <small>12.97° N / 79.15° E</small>
+        </div>
+
+        <div class="hero__scroll">
+          <span>Selected work</span>
+          <b>↓</b>
+        </div>
+      </div>
+
+      <div class="field-strip" aria-label="Areas of interest">
+        <span>Neuromorphic robotics</span>
+        <span>AI systems</span>
+        <span>Computational neuroscience</span>
+        <span>Behavioural science</span>
+        <span>Quantum sensing</span>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <header class="section-title">
+        <span>01</span>
+        <h2>Things I&rsquo;ve built</h2>
+        <p>Selected projects, experiments, and one paper.</p>
+      </header>
+
+      <article class="case case--compiler">
+        <div class="case__number">01</div>
+        <div class="case__copy">
+          <p class="label">Published research · AI infrastructure</p>
+          <h3>PlanCompiler</h3>
+          <p class="case__lead">
+            A typed compiler that turns an LLM&rsquo;s plan into a valid,
+            executable data workflow.
+          </p>
+          <p class="case__body">
+            Rather than letting a model improvise code, PlanCompiler asks it
+            to assemble typed building blocks. A validator catches structural
+            mistakes before the compiler emits Python. The result is more
+            predictable, inspectable, and reliable.
+          </p>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Read the paper ↗</a>
+            <a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <figure class="benchmark">
+          <figcaption>
+            <span>Benchmark / tasks passed</span>
+            <small>out of 300</small>
+          </figcaption>
+          <div class="benchmark__plot">
+            <div class="bar bar--one">
+              <span class="bar__value">278</span>
+              <i></i>
+              <b>PlanCompiler</b>
+            </div>
+            <div class="bar bar--two">
+              <span class="bar__value">202</span>
+              <i></i>
+              <b>GPT-4.1</b>
+            </div>
+            <div class="bar bar--three">
+              <span class="bar__value">187</span>
+              <i></i>
+              <b>Claude<br>Sonnet 4.6</b>
+            </div>
+          </div>
+          <p>Recorded 300-task benchmark</p>
+        </figure>
+      </article>
+
+      <div class="project-list">
+        <article class="project">
+          <div class="project__index">02</div>
+          <div class="project__title">
+            <p class="label">Agent systems</p>
+            <h3>Governed<br>Memory Layer</h3>
+          </div>
+          <div class="project__desc">
+            <p>
+              Shared memory for groups of agents, with a deliberate boundary
+              between private notes and promoted shared state.
+            </p>
+            <ul>
+              <li>Append-only event history</li>
+              <li>Reference resolution</li>
+              <li>Validation, replay, and fault tests</li>
+            </ul>
+            <a href="https://github.com/prnvh/governed_memory_layer" target="_blank" rel="noopener">View project ↗</a>
+          </div>
+          <div class="project__mark project__mark--memory" aria-hidden="true">
+            <span>A</span><span>B</span><span>C</span>
+          </div>
+        </article>
+
+        <article class="project project--dark">
+          <div class="project__index">03</div>
+          <div class="project__title">
+            <p class="label">Web security</p>
+            <h3>RAVEN</h3>
+          </div>
+          <div class="project__desc">
+            <p>
+              An autonomous penetration-testing agent built around browser
+              reconnaissance, JavaScript scanning, endpoint extraction, and
+              vulnerability-pattern retrieval.
+            </p>
+            <ul>
+              <li>Scoped operator tools</li>
+              <li>Retrieval-guided probes</li>
+              <li>Structured reports</li>
+            </ul>
+            <span class="muted-link">Local research project</span>
+          </div>
+          <div class="project__mark project__mark--raven" aria-hidden="true">
+            <span>R</span>
+            <i></i>
+          </div>
+        </article>
+
+        <article class="project project--lavender">
+          <div class="project__index">04</div>
+          <div class="project__title">
+            <p class="label">Artificial memory</p>
+            <h3>Lucid<br>Model</h3>
+          </div>
+          <div class="project__desc">
+            <p>
+              An earlier experiment with EBM and Hopfield-style memory,
+              designed to make recall inspectable rather than burying it in
+              an opaque chat history.
+            </p>
+            <ul>
+              <li>Basins and binding</li>
+              <li>Context operators</li>
+              <li>Projection and decoding</li>
+            </ul>
+            <a href="https://github.com/svmp-systems/lucid-model" target="_blank" rel="noopener">View project ↗</a>
+          </div>
+          <div class="project__mark project__mark--lucid" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="research" id="research">
+      <header class="section-title section-title--research">
+        <span>02</span>
+        <h2>On my desk</h2>
+        <p>Questions I&rsquo;m actively reading, testing, or planning around.</p>
+      </header>
+
+      <div class="question-list">
+        <article class="question">
+          <div class="question__meta">
+            <span>R.01</span>
+            <b>In development</b>
+          </div>
+          <h3>Can a robotic hand <em>reflex</em> entirely in hardware?</h3>
+          <p>
+            An FPGA-native tactile pipeline for detecting contact and slip,
+            then correcting grip without waiting for a CPU.
+          </p>
+          <div class="question__details">
+            <span>Latency</span><span>Jitter</span><span>Energy</span><span>Grip stability</span>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question__meta">
+            <span>R.02</span>
+            <b>Exploring</b>
+          </div>
+          <h3>What can long-context models find in continuous <em>MEG?</em></h3>
+          <p>
+            Testing whether continual-learning architectures can discover
+            reproducible brain states that transfer across people and sessions.
+          </p>
+          <div class="question__details">
+            <span>CamCAN</span><span>HCP MEG</span><span>Mamba / S4 / LSTM</span>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question__meta">
+            <span>R.03</span>
+            <b>Hypothesis</b>
+          </div>
+          <h3>Can a repeated ritual become a <em>retrieval cue?</em></h3>
+          <p>
+            A theoretical account of how pre-performance rituals paired with
+            training may acquire the ability to reinstate task-relevant context.
+          </p>
+          <div class="question__details">
+            <span>Motor learning</span><span>Neural reinstatement</span>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question__meta">
+            <span>R.04</span>
+            <b>Scoping</b>
+          </div>
+          <h3>Do old lunar-propellant studies survive <em>modern launch economics?</em></h3>
+          <p>
+            Rebuilding prior models under common assumptions, then updating
+            them for reusable launch and present-day architectures.
+          </p>
+          <div class="question__details">
+            <span>Reproduce</span><span>Normalise</span><span>Update</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__heading">
+        <p class="label">03 · A little context</p>
+        <h2>About me</h2>
+      </div>
+
+      <div class="about__story">
+        <p class="about__large">
+          I study computer science at VIT Vellore. I grew up in Bengaluru,
+          started out building AI systems, and now spend most of my time
+          somewhere between code, cognition, and hardware.
+        </p>
+        <div class="about__columns">
+          <p>
+            What ties my work together is a preference for things you can
+            inspect and test. In AI that meant compilers and explicit memory.
+            In robotics it means measuring the path from a sensor event to a
+            physical response.
+          </p>
+          <p>
+            I like ambitious questions, learning outside my field, and making
+            rough ideas concrete enough to be wrong. Eventually, I want to
+            help define a field rather than simply work inside one.
+          </p>
+        </div>
+      </div>
+
+      <aside class="about__facts">
+        <div>
+          <small>Now</small>
+          <strong>Computer Science</strong>
+          <span>VIT Vellore · 2026—</span>
+        </div>
+        <div>
+          <small>Next</small>
+          <strong>Research intern</strong>
+          <span>IGCAR · 2027 · SQUIDs & quantum sensing</span>
+        </div>
+        <div>
+          <small>Elsewhere</small>
+          <strong>Frontier Manual</strong>
+          <span>Research notes and author replies</span>
+          <a href="https://frontiermanual.blog" target="_blank" rel="noopener">Visit ↗</a>
+        </div>
+      </aside>
+
+      <div class="side-notes">
+        <div class="side-note side-note--blue">
+          <span>Outside the lab / 01</span>
+          <strong>2</strong>
+          <p>previously undiscovered giant radio galaxies independently identified</p>
+        </div>
+        <div class="side-note side-note--lime">
+          <span>Outside the lab / 02</span>
+          <strong>&lt;20</strong>
+          <p>minute 5K</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <p>Got an interesting problem?</p>
+      <h2>Let&rsquo;s talk.</h2>
+      <a href="mailto:prnvvh@gmail.com">prnvvh@gmail.com ↗</a>
+      <div class="contact__links">
+        <a href="https://github.com/prnvh" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/pranav-h2" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=fldDVMwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://x.com/prnvvh" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Pranav Harikumar</span>
+    <span>Vellore, India</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
