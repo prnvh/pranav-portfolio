@@ -5,255 +5,401 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pranav Harikumar — Portfolio</title>
   <meta name="description" content="Pranav Harikumar is a computer science student working across AI systems, neuroscience and robotics.">
-  <meta name="theme-color" content="#f2f0e9">
+  <meta name="theme-color" content="#f2eee6">
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="header">
+  <header class="header is-dark">
     <a class="logo" href="#top">Pranav H.</a>
     <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#research">Research</a>
       <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#work">Work</a>
     </nav>
     <a class="say-hi" href="mailto:prnvvh@gmail.com">Say hi ↗</a>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero__intro">
-        <p class="overline">Computer science student · VIT Vellore</p>
-        <h1>
-          I build things for
-          <span class="hero__line"><em>brains,</em> machines,</span>
-          <span class="hero__line">and the space <i>between.</i></span>
-        </h1>
+    <section class="landing" id="top" data-header="dark">
+      <div class="landing__stage">
+        <canvas class="landing__canvas" aria-hidden="true"></canvas>
+
+        <div class="landing__scale" aria-hidden="true">
+          <span>0.00</span><span>0.10</span><span>0.20</span><span>0.30</span><span>0.40</span><span>0.50</span>
+          <span>0.60</span><span>0.70</span><span>0.80</span><span>0.90</span><span>1.00</span>
+          <i></i>
+        </div>
       </div>
 
-      <div class="hero__bottom">
-        <p class="hero__bio">
+      <article class="intro" id="about">
+        <h1 data-reveal>
+          I build things for <em>brains,</em> machines, and the space <i>between.</i>
+        </h1>
+
+        <p class="intro__lead" data-reveal>
           I&rsquo;m Pranav, an 18-year-old student exploring how intelligence
           works&mdash;in software, in nervous systems, and in machines that
           sense and act in the world.
         </p>
 
-        <div class="hero__stamp" aria-hidden="true">
-          <span>Currently</span>
-          <strong>Vellore</strong>
-          <small>12.97° N / 79.15° E</small>
+        <p data-reveal>
+          I study computer science at VIT Vellore. I grew up in Bengaluru,
+          started out building AI systems, and now spend most of my time
+          somewhere between code, cognition, and hardware.
+        </p>
+
+        <p data-reveal>
+          What ties my work together is a preference for things you can
+          inspect and test. In AI that meant compilers and explicit memory.
+          In robotics it means measuring the path from a sensor event to a
+          physical response.
+        </p>
+
+        <p data-reveal>
+          I like ambitious questions, learning outside my field, and making
+          rough ideas concrete enough to be wrong. Eventually, I want to
+          help define a field rather than simply work inside one.
+        </p>
+
+        <div class="intro__sign" data-reveal>
+          <strong>Pranav H.</strong>
+          <span>Vellore, India</span>
+          <span>12.97° N / 79.15° E</span>
         </div>
 
-        <div class="hero__scroll">
-          <span>Selected work</span>
-          <b>↓</b>
-        </div>
-      </div>
+        <dl class="intro__facts" data-reveal>
+          <div>
+            <dt>Now</dt>
+            <dd>Computer Science <span>VIT Vellore · 2026—</span></dd>
+          </div>
+          <div>
+            <dt>Next</dt>
+            <dd>Research intern <span>IGCAR · 2027 · SQUIDs &amp; quantum sensing</span></dd>
+          </div>
+          <div>
+            <dt>Elsewhere</dt>
+            <dd><a href="https://frontiermanual.blog" target="_blank" rel="noopener">Frontier Manual ↗</a> <span>Research notes and author replies</span></dd>
+          </div>
+        </dl>
 
-      <div class="field-strip" aria-label="Areas of interest">
+        <p class="intro__credit" data-reveal>
+          Plate 00 · Hercules A · Hubble + VLA ·
+          <a href="https://esahubble.org/images/opo1247a/" target="_blank" rel="noopener">NASA, ESA, NRAO/AUI/NSF · CC BY 3.0</a>
+        </p>
+      </article>
+    </section>
+
+    <div class="field-strip" aria-label="Areas of interest">
+      <div class="field-strip__track">
         <span>Neuromorphic robotics</span>
         <span>AI systems</span>
         <span>Computational neuroscience</span>
         <span>Behavioural science</span>
         <span>Quantum sensing</span>
       </div>
+    </div>
+
+    <section class="research" id="research" style="--files: 4">
+      <div class="research__stage">
+        <div class="cabinet">
+          <div class="cab__box" aria-hidden="true"></div>
+
+          <div class="cab__folder cab__folder--back" style="--y: 4" aria-hidden="true"><span style="--x: 8%">Radio astronomy</span><span style="--x: 60%">Space systems</span></div>
+          <div class="cab__folder cab__folder--back" style="--y: 8" aria-hidden="true"><span style="--x: 34%">AI systems</span><span style="--x: 74%">Cognition</span></div>
+
+          <div class="file is-active" style="--tab: 8%" aria-hidden="true">
+            <span class="file__tab">R.01</span>
+            <div class="doc">
+              <div class="doc__head">
+                <div class="doc__titles">
+                  <b class="doc__bar doc__bar--solid">Giant radio</b>
+                  <b class="doc__bar doc__bar--outline">Galaxies</b>
+                </div>
+                <div class="doc__photo"><img src="assets/galaxy-n02-field.jpg" alt=""></div>
+              </div>
+              <div class="doc__body">
+                <div class="doc__fig">
+                  <small>Figure</small>
+                  <div class="doc__figbox"><img src="assets/galaxy-n12-field.jpg" alt=""></div>
+                </div>
+                <div class="doc__side">
+                  <small>Status</small>
+                  <div class="doc__status">In review<br>LoTSS DR3</div>
+                  <small>Stage</small>
+                  <div class="doc__stages">
+                    <span class="is-done">Idea</span><span class="is-done">Scoping</span><span class="is-done">Analysis</span><span class="is-done">Review</span><span>Published</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="file" style="--tab: 30%" aria-hidden="true">
+            <span class="file__tab">R.02</span>
+            <div class="doc">
+              <div class="doc__head">
+                <div class="doc__titles">
+                  <b class="doc__bar doc__bar--solid">Plan</b>
+                  <b class="doc__bar doc__bar--outline">Compiler</b>
+                </div>
+                <div class="doc__photo doc__photo--stamp"><b>278</b><small>/ 300</small></div>
+              </div>
+              <div class="doc__body">
+                <div class="doc__fig">
+                  <small>Figure</small>
+                  <div class="doc__figbox thumb-bars">
+                    <i class="is-lead" style="--v: 278"></i><i style="--v: 202"></i><i style="--v: 187"></i>
+                  </div>
+                </div>
+                <div class="doc__side">
+                  <small>Status</small>
+                  <div class="doc__status">Published<br>arXiv 2604.13092</div>
+                  <small>Stage</small>
+                  <div class="doc__stages">
+                    <span class="is-done">Idea</span><span class="is-done">Scoping</span><span class="is-done">Analysis</span><span class="is-done">Review</span><span class="is-done">Published</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="file" style="--tab: 52%" aria-hidden="true">
+            <span class="file__tab">R.03</span>
+            <div class="doc">
+              <div class="doc__head">
+                <div class="doc__titles">
+                  <b class="doc__bar doc__bar--solid">Lunar ISRU</b>
+                  <b class="doc__bar doc__bar--outline">Economics</b>
+                </div>
+                <div class="doc__photo doc__photo--stamp"><b>ISRU</b><small>Propellant</small></div>
+              </div>
+              <div class="doc__body">
+                <div class="doc__fig">
+                  <small>Figure</small>
+                  <div class="doc__figbox doc-moon"><span></span><i></i></div>
+                </div>
+                <div class="doc__side">
+                  <small>Status</small>
+                  <div class="doc__status">Scoping<br>Reusable launch</div>
+                  <small>Stage</small>
+                  <div class="doc__stages">
+                    <span class="is-done">Idea</span><span class="is-done">Scoping</span><span>Analysis</span><span>Review</span><span>Published</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="file" style="--tab: 72%" aria-hidden="true">
+            <span class="file__tab">R.04</span>
+            <div class="doc">
+              <div class="doc__head">
+                <div class="doc__titles">
+                  <b class="doc__bar doc__bar--solid">PPR vs context</b>
+                  <b class="doc__bar doc__bar--outline">Reinstatement</b>
+                </div>
+                <div class="doc__photo doc__photo--stamp"><b>PPR</b><small>Hypothesis</small></div>
+              </div>
+              <div class="doc__body">
+                <div class="doc__fig">
+                  <small>Figure</small>
+                  <div class="doc__figbox doc-steps"><b>01</b><i></i><b>02</b><i></i><b>03</b></div>
+                </div>
+                <div class="doc__side">
+                  <small>Status</small>
+                  <div class="doc__status">Hypothesis<br>Motor learning</div>
+                  <small>Stage</small>
+                  <div class="doc__stages">
+                    <span class="is-done">Idea</span><span>Scoping</span><span>Analysis</span><span>Review</span><span>Published</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cab__folder cab__folder--front" style="--y: 60; --x: 56%"><button type="button" data-goto="0">Giant radio galaxies</button></div>
+          <div class="cab__folder cab__folder--front" style="--y: 64; --x: 20%"><button type="button" data-goto="1">PlanCompiler</button></div>
+          <div class="cab__folder cab__folder--front" style="--y: 68; --x: 58%"><button type="button" data-goto="2">Lunar ISRU</button></div>
+          <div class="cab__folder cab__folder--front" style="--y: 72; --x: 24%"><button type="button" data-goto="3">PPR vs context</button></div>
+
+          <div class="cab__lip" aria-hidden="true"></div>
+          <div class="cab__front" aria-hidden="true">
+            <div class="cab__handle"><i></i><i></i><i></i></div>
+            <span class="cab__label">Research · <b class="js-file-count">01</b> / 04</span>
+          </div>
+        </div>
+
+        <div class="research-panel">
+          <header class="research-panel__head">
+            <p class="section-head__index">01 / Research</p>
+            <h2>From the <em>file drawer.</em></h2>
+          </header>
+
+          <div class="dossiers">
+            <article class="dossier is-active">
+              <p class="dossier__bar"><b>R.01</b><span>Radio astronomy · Paper</span></p>
+              <h3>Giant radio galaxies in LoTSS DR3</h3>
+              <p class="body">Two apparently unreported giant radio galaxy candidates found in LOFAR&rsquo;s LoTSS DR3 survey. N02 has a quasar host at z = 0.80245 and spans 1.127–1.165 Mpc; N12 has a galaxy host at z = 0.75551 and a conservative size of 0.795–0.818 Mpc. Specialist review supports both host associations and giant classifications; publication-priority verification remains open.</p>
+              <dl class="dossier__table">
+                <div><dt>Field</dt><dd>Radio astronomy</dd></div>
+                <div><dt>Status</dt><dd>Expert-reviewed candidates</dd></div>
+                <div><dt>Data</dt><dd>LoTSS DR3</dd></div>
+              </dl>
+            </article>
+
+            <article class="dossier">
+              <p class="dossier__bar"><b>R.02</b><span>AI systems · Published paper</span></p>
+              <h3>PlanCompiler</h3>
+              <p class="body">A typed compiler that turns an LLM&rsquo;s plan into a valid, executable data workflow. The model assembles typed building blocks; a validator catches structural mistakes before the compiler emits Python. On a 300-task benchmark it passed 278 tasks, against 202 for GPT-4.1 and 187 for Claude Sonnet 4.6.</p>
+              <dl class="dossier__table">
+                <div><dt>Field</dt><dd>AI infrastructure</dd></div>
+                <div><dt>Status</dt><dd>Published · arXiv 2604.13092</dd></div>
+                <div><dt>Links</dt><dd class="links"><a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Paper ↗</a><a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">Source ↗</a></dd></div>
+              </dl>
+            </article>
+
+            <article class="dossier">
+              <p class="dossier__bar"><b>R.03</b><span>Space systems · Scoping</span></p>
+              <h3>Lunar ISRU economics</h3>
+              <p class="body">Reassessing the economics of lunar in-situ resource utilisation for propellant. Prior studies used different assumptions, so I&rsquo;m rebuilding them on a common basis, then updating them for reusable launch.</p>
+              <dl class="dossier__table">
+                <div><dt>Field</dt><dd>Space systems</dd></div>
+                <div><dt>Status</dt><dd>Scoping</dd></div>
+                <div><dt>Method</dt><dd>Reproduce · Normalise · Update</dd></div>
+              </dl>
+            </article>
+
+            <article class="dossier">
+              <p class="dossier__bar"><b>R.04</b><span>Behavioural science · Hypothesis</span></p>
+              <h3>Pre-performance routines vs context-based reinstatement</h3>
+              <p class="body">Can a repeated ritual become a retrieval cue? This compares how a training-paired pre-performance routine might reinstate task-relevant neural context with reinstating the training context itself.</p>
+              <dl class="dossier__table">
+                <div><dt>Field</dt><dd>Behavioural science</dd></div>
+                <div><dt>Status</dt><dd>Hypothesis</dd></div>
+                <div><dt>Themes</dt><dd>Motor learning · Neural reinstatement</dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <ol class="file-index">
+            <li><button type="button" data-goto="0"><span>R.01</span><b>Giant radio galaxies</b><em>In review</em></button></li>
+            <li><button type="button" data-goto="1"><span>R.02</span><b>PlanCompiler</b><em>Published</em></button></li>
+            <li><button type="button" data-goto="2"><span>R.03</span><b>Lunar ISRU economics</b><em>Scoping</em></button></li>
+            <li><button type="button" data-goto="3"><span>R.04</span><b>PPR vs context</b><em>Hypothesis</em></button></li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <section class="portfolio-zone" id="work">
-      <header class="zone-head">
-        <p>01 / Selected work</p>
-        <h2>Projects with<br><em>proof behind them.</em></h2>
-        <span>Systems, experiments, and one published paper.</span>
+    <section class="work" id="work">
+      <header class="work__head" data-reveal>
+        <div>
+          <p class="section-head__index">02 / Selected work</p>
+          <h2>Projects with <em>proof behind them.</em></h2>
+        </div>
+        <p class="work__note">Observational research, systems, and one published paper.</p>
       </header>
 
-      <div class="work-mosaic">
-        <article class="work-feature">
-          <div class="work-feature__copy">
-            <p class="tile-meta">01 · AI infrastructure · Published research</p>
-            <h3>Plan<br>Compiler</h3>
-            <p class="tile-lead">A typed compiler that turns an LLM&rsquo;s plan into a valid, executable data workflow.</p>
-            <p class="tile-body">The model assembles typed building blocks; a validator catches structural mistakes before the compiler emits Python.</p>
-            <div class="tile-links">
-              <a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">Source ↗</a>
-            </div>
+      <article class="feature" data-reveal>
+        <div class="tile sky" data-sky>
+          <figure class="sky__view is-active" data-view="n02" data-info="<b>N02</b> Quasar host · z = 0.80245 · 1.127–1.165 Mpc">
+            <img class="sky__optical" src="assets/n02-optical.jpg" alt="Legacy Surveys optical field around candidate N02" width="512" height="512">
+            <img class="sky__radio" src="assets/n02-radio.png" alt="LoTSS DR3 radio emission of N02: a compact core with an east and a west lobe" width="1024" height="1024">
+          </figure>
+          <figure class="sky__view" data-view="n12" data-info="<b>N12</b> Galaxy host · z = 0.75551 · 0.795–0.818 Mpc">
+            <img class="sky__optical" src="assets/n12-optical.jpg" alt="Legacy Surveys optical field around candidate N12" width="512" height="512" loading="lazy">
+            <img class="sky__radio" src="assets/n12-radio.png" alt="LoTSS DR3 radio emission of N12: a core with a north and a south lobe" width="1024" height="1024" loading="lazy">
+          </figure>
+
+          <div class="sky__line" aria-hidden="true"><span>‹ ›</span></div>
+          <input class="sky__range" type="range" min="0" max="100" value="50" aria-label="Drag to reveal the radio emission">
+
+          <p class="sky__info"><b>N02</b> Quasar host · z = 0.80245 · 1.127–1.165 Mpc</p>
+          <div class="sky__tabs" role="group" aria-label="Candidate">
+            <button type="button" data-show="n02" aria-pressed="true">N02</button>
+            <button type="button" data-show="n12" aria-pressed="false">N12</button>
           </div>
-          <div class="compiler-visual" aria-label="PlanCompiler benchmark results">
-            <div class="compiler-flow" aria-hidden="true">
-              <span>PLAN</span><i></i><span>VALIDATE</span><i></i><span>COMPILE</span>
-            </div>
-            <div class="score-board">
-              <small>Tasks passed / 300</small>
-              <div><b>278</b><span>PlanCompiler</span></div>
-              <div><b>202</b><span>GPT-4.1</span></div>
-              <div><b>187</b><span>Claude Sonnet 4.6</span></div>
-            </div>
+          <span class="sky__label sky__label--optical">Optical<span> · Legacy Surveys</span></span>
+          <span class="sky__label sky__label--radio">Radio<span> · LOFAR 144 MHz</span></span>
+        </div>
+
+        <div class="feature__body">
+          <p class="kicker"><b>Radio astronomy</b>LoTSS DR3</p>
+          <h3>Two candidate giant radio galaxies.</h3>
+          <p class="feature__lead">I independently identified two apparently previously unreported giant radio systems in public survey data.</p>
+          <p>Specialist review supports both host associations and giant classifications. Full publication-priority verification remains open, so I describe them as expert-supported candidate discoveries.</p>
+          <dl class="rows">
+            <div><dt>N02 host</dt><dd>Quasar · z = 0.80245</dd></div>
+            <div><dt>N12 host</dt><dd>Galaxy · z = 0.75551</dd></div>
+            <div><dt>Plots</dt><dd><a href="assets/galaxy-n02.png" target="_blank" rel="noopener">N02 ↗</a><a href="assets/galaxy-n12.png" target="_blank" rel="noopener">N12 ↗</a></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <div class="releases">
+        <article class="release" data-reveal>
+          <div class="tile thumb thumb-bars" aria-hidden="true">
+            <i class="is-lead" style="--v: 278"><b>278</b></i>
+            <i style="--v: 202"><b>202</b></i>
+            <i style="--v: 187"><b>187</b></i>
           </div>
+          <p class="kicker"><b>AI infrastructure</b>Published research</p>
+          <h3>Plan Compiler</h3>
+          <p>A typed compiler that turns an LLM&rsquo;s plan into a valid, executable data workflow. The model assembles typed building blocks; a validator catches structural mistakes before the compiler emits Python.</p>
+          <dl class="rows">
+            <div><dt>Paper</dt><dd><a href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">arXiv 2604.13092</a></dd></div>
+            <div><dt>Source</dt><dd><a href="https://github.com/prnvh/llm-code-graph-compiler" target="_blank" rel="noopener">GitHub</a></dd></div>
+          </dl>
+          <a class="pill" href="https://arxiv.org/abs/2604.13092" target="_blank" rel="noopener">Read paper <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="work-tile work-tile--memory">
-          <div class="tile-copy">
-            <p class="tile-meta">02 · Agent systems</p>
-            <h3>Governed<br>Memory Layer</h3>
-            <p>Shared memory for groups of agents, with a deliberate boundary between private notes and promoted shared state.</p>
-            <a href="https://github.com/prnvh/governed_memory_layer" target="_blank" rel="noopener">View project ↗</a>
+        <article class="release" data-reveal>
+          <div class="tile thumb thumb-memory" aria-hidden="true">
+            <span>Private</span><span>Validate</span><span>Shared</span>
           </div>
-          <div class="memory-visual" aria-hidden="true">
-            <div class="memory-card memory-card--a"><b>PRIVATE</b><span>working state</span></div>
-            <div class="memory-card memory-card--b"><b>VALIDATE</b><span>resolve + check</span></div>
-            <div class="memory-card memory-card--c"><b>SHARED</b><span>promoted state</span></div>
-          </div>
+          <p class="kicker"><b>Agent systems</b>Multi-agent memory</p>
+          <h3>Governed Memory Layer</h3>
+          <p>Shared memory for groups of agents, with a deliberate boundary between private notes and promoted shared state.</p>
+          <dl class="rows">
+            <div><dt>Boundary</dt><dd>Private → shared</dd></div>
+            <div><dt>Source</dt><dd><a href="https://github.com/prnvh/governed_memory_layer" target="_blank" rel="noopener">GitHub</a></dd></div>
+          </dl>
+          <a class="pill" href="https://github.com/prnvh/governed_memory_layer" target="_blank" rel="noopener">View project <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="work-tile work-tile--raven">
-          <div class="raven-visual" aria-hidden="true"><span>R</span><i></i></div>
-          <div class="tile-copy">
-            <p class="tile-meta">03 · Web security</p>
-            <h3>RAVEN</h3>
-            <p>Autonomous security testing through browser reconnaissance, endpoint extraction, and retrieval-guided probes.</p>
-            <span class="tile-muted">Local research project</span>
+        <article class="release" data-reveal>
+          <div class="tile thumb" aria-hidden="true">
+            <div class="radar"><i></i><b></b><b></b><b></b><b></b></div>
           </div>
-        </article>
-
-        <article class="work-tile work-tile--lucid">
-          <div class="tile-copy">
-            <p class="tile-meta">04 · Artificial memory</p>
-            <h3>Lucid Model</h3>
-            <p>An inspectable EBM and Hopfield-style memory architecture built around basins, binding, context, projection, and decoding.</p>
-            <a href="https://github.com/svmp-systems/lucid-model" target="_blank" rel="noopener">View project ↗</a>
-          </div>
-          <div class="lucid-visual" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><i>RECALL</i>
-          </div>
+          <p class="kicker"><b>Web security</b>Autonomous testing</p>
+          <h3>RAVEN</h3>
+          <p>Autonomous security testing through browser reconnaissance, endpoint extraction, and retrieval-guided probes.</p>
+          <dl class="rows">
+            <div><dt>Method</dt><dd>Retrieval-guided probes</dd></div>
+            <div><dt>Status</dt><dd>Local research project</dd></div>
+          </dl>
+          <span class="pill pill--muted">Not public yet</span>
         </article>
       </div>
     </section>
 
-    <section class="research-zone" id="research">
-      <header class="zone-head zone-head--research">
-        <p>02 / Research notebook</p>
-        <h2>Questions currently<br><em>on my desk.</em></h2>
-        <span>Active directions and hypotheses, not finished claims.</span>
-      </header>
-
-      <div class="research-mosaic">
-        <article class="research-tile research-tile--reflex">
-          <div class="research-art research-art--reflex" aria-hidden="true">
-            <div class="signal"></div><div class="chip">FPGA</div><div class="arrow">→</div><div class="grip">GRIP</div>
-          </div>
-          <div class="research-copy">
-            <p class="tile-meta">R.01 · Neuromorphic robotics · In development</p>
-            <h3>Can a robotic hand reflex entirely in hardware?</h3>
-            <p>An FPGA-native tactile pipeline for detecting contact and slip, then correcting grip without waiting for a CPU.</p>
-            <div class="tile-tags"><span>Latency</span><span>Energy</span><span>Grip stability</span></div>
-          </div>
-        </article>
-
-        <article class="research-tile research-tile--meg">
-          <div class="meg-orbit" aria-hidden="true"><i></i><i></i><i></i><b>MEG</b></div>
-          <div class="research-copy">
-            <p class="tile-meta">R.02 · Computational neuroscience</p>
-            <h3>Long-context models for continuous MEG.</h3>
-            <p>Can continual-learning architectures find brain states that transfer across people and sessions?</p>
-            <div class="tile-tags"><span>CamCAN</span><span>HCP MEG</span><span>Mamba / S4</span></div>
-          </div>
-        </article>
-
-        <article class="research-tile research-tile--ritual">
-          <div class="research-copy">
-            <p class="tile-meta">R.03 · Behavioural science · Hypothesis</p>
-            <h3>Can a repeated ritual become a retrieval cue?</h3>
-            <p>How training-paired rituals may acquire the ability to reinstate task-relevant neural context.</p>
-            <div class="tile-tags"><span>Motor learning</span><span>Neural reinstatement</span></div>
-          </div>
-          <div class="ritual-steps" aria-hidden="true"><b>01</b><i></i><b>02</b><i></i><b>03</b></div>
-        </article>
-
-        <article class="research-tile research-tile--lunar">
-          <div class="lunar-art" aria-hidden="true"><span></span><i></i></div>
-          <div class="research-copy">
-            <p class="tile-meta">R.04 · Space systems · Scoping</p>
-            <h3>Reassessing lunar propellant economics.</h3>
-            <p>Rebuilding prior studies under common assumptions, then updating them for reusable launch.</p>
-            <div class="tile-tags"><span>Reproduce</span><span>Normalise</span><span>Update</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about__heading">
-        <p class="label">03 · A little context</p>
-        <h2>About me</h2>
-      </div>
-
-      <div class="about__story">
-        <p class="about__large">
-          I study computer science at VIT Vellore. I grew up in Bengaluru,
-          started out building AI systems, and now spend most of my time
-          somewhere between code, cognition, and hardware.
-        </p>
-        <div class="about__columns">
-          <p>
-            What ties my work together is a preference for things you can
-            inspect and test. In AI that meant compilers and explicit memory.
-            In robotics it means measuring the path from a sensor event to a
-            physical response.
-          </p>
-          <p>
-            I like ambitious questions, learning outside my field, and making
-            rough ideas concrete enough to be wrong. Eventually, I want to
-            help define a field rather than simply work inside one.
-          </p>
+    <section class="contact" data-header="dark">
+      <div class="contact__inner" data-reveal>
+        <p>Got an interesting problem?</p>
+        <h2>Let&rsquo;s talk.</h2>
+        <a class="contact__mail" href="mailto:prnvvh@gmail.com">prnvvh@gmail.com ↗</a>
+        <div class="contact__links">
+          <a href="https://github.com/prnvh" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/pranav-h2" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=fldDVMwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          <a href="https://x.com/prnvvh" target="_blank" rel="noopener">X / Twitter</a>
         </div>
-      </div>
-
-      <aside class="about__facts">
-        <div>
-          <small>Now</small>
-          <strong>Computer Science</strong>
-          <span>VIT Vellore · 2026—</span>
-        </div>
-        <div>
-          <small>Next</small>
-          <strong>Research intern</strong>
-          <span>IGCAR · 2027 · SQUIDs & quantum sensing</span>
-        </div>
-        <div>
-          <small>Elsewhere</small>
-          <strong>Frontier Manual</strong>
-          <span>Research notes and author replies</span>
-          <a href="https://frontiermanual.blog" target="_blank" rel="noopener">Visit ↗</a>
-        </div>
-      </aside>
-
-      <div class="side-notes">
-        <div class="side-note side-note--blue">
-          <span>Outside the lab / 01</span>
-          <strong>2</strong>
-          <p>previously undiscovered giant radio galaxies independently identified</p>
-        </div>
-        <div class="side-note side-note--lime">
-          <span>Outside the lab / 02</span>
-          <strong>&lt;20</strong>
-          <p>minute 5K</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <p>Got an interesting problem?</p>
-      <h2>Let&rsquo;s talk.</h2>
-      <a href="mailto:prnvvh@gmail.com">prnvvh@gmail.com ↗</a>
-      <div class="contact__links">
-        <a href="https://github.com/prnvh" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/pranav-h2" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=fldDVMwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-        <a href="https://x.com/prnvvh" target="_blank" rel="noopener">X / Twitter</a>
       </div>
     </section>
   </main>
@@ -264,6 +410,7 @@
     <a href="#top">Back to top ↑</a>
   </footer>
 
+  <script src="assets/hercules-a.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
